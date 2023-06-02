@@ -2,6 +2,7 @@
 var count = document.getElementById('task-counter');
 var taskInputText = document.getElementById('input-text');
 var taskList = document.getElementById('tasks-list');
+var ID = 1;
 
 var incomplete = document.getElementById('incomplete');
 var completed = document.getElementById('completed');
@@ -47,7 +48,6 @@ const renderList = (array=tasksArray) => {
 // toggling task check/uncheck 
 const toggleTask = (taskId) => {
   for (var t of tasksArray) {
-    console.log(taskId);
     if (t.id === Number(taskId)) {
       console.log(t.completed);  
       t.completed = !t.completed;
@@ -61,12 +61,9 @@ const toggleTask = (taskId) => {
 
 // deleting task
 const deleteTask = (taskId) => {
-  let newTasks = [];
-  for (var t of tasksArray) {
-    if (t.id !== Number(taskId)) {
-      newTasks.push(t);
-    }
-  }
+  let newTasks = tasksArray.filter((task)=> {
+    return task.id !== Number(taskId);
+  });
   console.log(newTasks);
   tasksArray = newTasks;
   renderList();
@@ -140,7 +137,7 @@ const handleInputKeypress = (e) => {
 
       const task = {
         text,
-        id: tasksArray.length + 1,
+        id: ID++,
         completed: false
       }
       e.target.value = '';
@@ -184,7 +181,7 @@ const handleClickListener = (e) => {
       }
       const task = {
         text,
-        id: tasksArray.length + 1,
+        id: ID++,
         completed: false
       }
       taskInputText.value = '';

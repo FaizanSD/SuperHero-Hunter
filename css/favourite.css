@@ -1,0 +1,353 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  background-image: url("../images/wallpaperflare.com_wallpaper.jpg");
+  background-size: cover;
+  overflow: hidden;
+}
+
+#header {
+  height: 70px;
+  border: 2px solid black;
+  border-radius: 3px;
+  background-color: #D1D5DB;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border: 2px solid #0070f3;
+  border-left: 0;
+  border-right: 0;
+  background-image: url("../images/wallpaperflare.com_avenger.jpg");
+}
+
+#header a {
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+  display: inline-block;
+  outline: 0;
+  cursor: pointer;
+  border: none;
+  padding: 0 56px;
+  line-height: 45px;
+  border-radius: 7px;
+  background-color: black;
+  color: white;
+  margin-right: 2rem;
+  font-weight: 400;
+  font-size: 16px;
+  box-shadow: 0 4px 14px 0 rgba(144, 144, 144, 0.39);
+  transition: background 0.2s ease,color 0.2s ease,box-shadow 0.2s ease;
+  height: 48px;
+  background-size: fit-content;
+  border: 2px solid #0070f3;
+}
+
+#header a:hover{
+  background-color: #0070f3;
+  box-shadow: 0 6px 20px rgba(56, 56, 56, 0.23);
+  border: 2px solid black;
+}
+
+a img {
+  width: 100%;
+  height: 100%;
+}
+
+#oc {
+  display: flex;
+  width: 70%;
+  height: 80%;
+  justify-content: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.container {
+  width: 95%;
+  display: flex;
+  overflow-y: scroll;
+  flex-wrap: wrap;
+  height: 100%;
+  background: grey;
+  margin: auto;
+  background-image: url("../images/avengers-pc-wallpapers.jpg");
+  overflow: scroll;
+  scrollbar-width: none;
+}
+
+.container::-webkit-scrollbar {
+  height: 0;
+  width: 0;   
+  display: none;
+}
+
+.heroChild {
+  display: flex;
+  flex-direction: column;
+  margin: 0.8rem;
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  padding: .5rem;
+  margin: auto;
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+
+.image-container {
+  position: relative;
+  height: 440px;
+  width: 350px;
+  overflow: hidden;
+  align-self: center;
+}
+
+.image {
+  height: 440px;
+  width: 350px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 3px 10px 100px 1px;
+}
+
+.image-container:hover .image {
+  filter: blur(5px); /* Adjust the blur radius as needed */
+  transition: .5s ease-in;
+}
+
+
+.caption {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  bottom: 0;
+  padding: 1rem 1rem;
+  color: white;
+  font-size: 1.5rem;
+  opacity: 0;
+  border: 1px solid #FFF;
+  box-shadow: 0 3px 6px rgba(201, 201, 201, 0.16), 0 3px 6px rgba(238, 238, 238, 0.23);
+}
+
+.caption h1 {
+  text-shadow: 3px 3px 20px black,
+  -1px 0px 0px black,
+    1px 0px 0px black,
+    0px -1px 0px black,
+    0px 1px 0px black;
+}
+
+.caption:hover {
+  opacity: 1;
+  transition: .5s ease-in;
+}
+
+.caption:hover strong {
+  color: black;  
+}
+
+.caption ul {
+  list-style-type: none;
+  font: 1rem;
+  background: rgba(255, 255, 255, 0.3);
+  width: 120%;
+}
+
+.caption h1 {
+  margin-bottom: 4rem ;
+}
+
+.caption ul li {
+  height: 23px;
+  margin: 1rem;
+  
+}
+
+.caption ul li img {
+  height: 23px;
+  margin-right: .6rem;
+  margin-left: 3.7rem;
+}
+
+
+h1 {
+    text-align: center;
+}
+
+/* button styling */
+.button-4 {
+  appearance: none;
+  background-color: #ff0000;
+  border: 1px solid rgba(27, 31, 35, 0.15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+  box-sizing: border-box;
+  color: black;
+  max-width: 350px;
+  min-width: 350px;
+  cursor: pointer;
+  display: inline-block;
+  font-family: monospace, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 20px;
+  list-style: none;
+  padding: 6px 16px;
+  position: relative;
+  transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+  word-wrap: break-word;
+  height: 40px;
+}
+
+.button-4:hover {
+  background-color: black;
+  text-decoration: none;
+  transition-duration: 0.1s;
+  color: honeydew;
+  color: #0070f3;
+  border: 1.5px solid #d4142a;
+}
+
+.button-4:disabled {
+  background-color: #FAFBFC;
+  border-color: rgba(27, 31, 35, 0.15);
+  color: #959DA5;
+  cursor: default;
+}
+
+.button-4:active {
+  background-color: #EDEFF2;
+  box-shadow: rgba(225, 228, 232, 0.2) 0 1px 0 inset;
+  transition: none 0s;
+}
+
+.button-4:focus {
+  outline: 1px transparent;
+}
+
+.button-4:before {
+  display: none;
+}
+
+.button-4:-webkit-details-marker {
+  display: none;
+}
+
+
+@media screen and (max-width: 768px) {
+  .heroChild {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center items horizontally */
+  }
+
+  .image-container {
+    width: 80%; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin: 1rem 0; /* Add some space */
+  }
+
+  .image {
+    width: 100%; /* Make the image width 100% of its container */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .caption {
+    padding: 0.1rem; /* Adjust padding */
+  }
+
+  .caption h1 {
+    margin-bottom: 1rem; /* Adjust spacing */
+  }
+
+  .caption ul:hover {
+    margin: 0;
+  }
+
+  .caption ul li {
+    margin: 0.5rem; /* Adjust spacing */
+    font-size: 15px;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  a {
+    display: flex;
+    margin: auto;
+  }
+
+  .image {
+    width: 100%; /* Make the image width 100% of its container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 0; /* Remove border radius on smaller screens */
+    box-shadow: none; /* Remove box shadow on smaller screens */
+  }
+
+  .image-container:hover .image {
+    filter: none; /* Remove blur effect on hover for smaller screens */
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  #header {
+    justify-content: center;
+  }
+
+  #header a{
+    width: 100%;
+    text-align: center;
+    margin: 0 1px;
+  }
+
+  .container {
+    width: 90%; /* Adjust the width as needed */
+    background: none; /* Remove background image on smaller screens */
+    padding: 1rem; /* Add padding for spacing */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%; /* Adjust the width as needed */
+    padding: 1rem; /* Add padding for spacing */
+    background-image: url("../images/avengers-pc-wallpapers.jpg"); 
+    background-size: contain; 
+  }
+
+  #oc {
+    margin: auto;
+  }
+
+  /* Adjust the background-size property to ensure the background image is responsive */
+  .container {
+    background-size: contain;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .button-4 {
+    max-width: 100%; /* Adjust the width as needed */
+    min-width: 80%; /* Allow the button to shrink as needed */
+    font-size: 18px; /* Adjust the font size for better readability */
+  }
+}

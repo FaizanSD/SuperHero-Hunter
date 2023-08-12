@@ -1,65 +1,52 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-    <script
-      src="https://kit.fontawesome.com/b3348ae33f.js"
-      crossorigin="anonymous"
-    ></script>
+    <title>SuperHero Hunter</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/5147082889.js" crossorigin="anonymous"></script>
   </head>
-  <body>
-    <section>
-      <div id="input-header">
-        <span id="input-icon">
-          <i class="fa-solid fa-clipboard-list fa-2x"></i>
-        </span>
-        <input type="text" id="input-text" placeholder="Type your task" />
-        <span> <i id="plus" class="fa-solid fa-circle-plus"></i> </span>
+  
+    <div id="display-heros">
+      <div id="navbar">
+        <a class="nav-link" href="./favourite.html" id="link">
+          Favourite Heros
+        </a>
+        <div id="form">
+          <input id="hero-search-bar" type="text" placeholder="Enter Superhero Name"/>
+          <button type="submit">Search </button>
+        </div>
       </div>
+      
+     
+    
+      <div id="info-container">
+              
+      <section>
+        <ul id="heros-list">
 
-      <div id="div1">
-        <span>
-          <i class="fas fa-regular fa-check-double"> </i>
-          <span id="complete-all">complete all task</span>
-        </span>
-        <span id="clear-completed">clear completed</span>
-      </div>
-      <hr />
-      <br />
-
-      <div id="list">
-        <ul id="tasks-list">
-          <!--           
-            <li>
-              <span class="checkbox-wrapper-24">
-                <input class="check" type="checkbox" id="${task.id}" ${task.completed ? "checked" : ''} data-id="${task.id}" />
-                <label for="${task.id}">
-                  <span></span>${task.text}
-                </label>
-              </span>
-              <span>
-                <i id="delete" class="fa-solid fa-trash-can" data-id="${task.id}"></i> 
-              </span>
-            </li>
-          -->
         </ul>
+      </section>
       </div>
+    
+    </div>
 
-      <br />
-      <hr />
-      <br />
-      <div id="counter">
-        <span> <span id="task-counter"> 0 </span> tasks left</span>
-        <span id="clear-all">
-          <span id="all">All</span>
-          <span id="completed">Completed</span>
-          <span id="incomplete"> Incomplete </span>
-        </span>
-      </div>
-    </section>
-    <script src="index.js"></script>
+    <script src="js/scripts.js"></script>
   </body>
 </html>
+
+<!-- 
+  
+   
+                
+
+
+                
+               
+                    
+                
+ -->

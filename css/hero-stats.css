@@ -177,7 +177,12 @@ ul::-webkit-scrollbar {
     color: #1D4ED8;  
 }
 
-
+// media queries 
+@media screen and (max-width: 548px) {
+    #stats {
+        flex-direction: column;
+    }
+}
 
 @media screen and (max-width: 768px) {
     #hero-name {
